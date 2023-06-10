@@ -934,3 +934,83 @@ hr {
 .gh-copyright {
     font-size: 1.4rem;
 }
+
+
+
+/* Blog theme styles */
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Blog theme styles */
+.blog-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-feed {
+    list-style-type: none;
+}
+
+.blog-article-header {
+    margin-bottom: 30px;
+}
+
+.blog-article-title {
+    font-size: 36px;
+}
+
+.blog-article-content {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.blog-post {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.blog-post-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.blog-post-year {
+    font-size: 24px;
+}
+
+.blog-post-month,
+.blog-post-day {
+    font-size: 14px;
+    color: #888;
+}
+
+.blog-post-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.blog-post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Add brutalist touch */
+.blog-post-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

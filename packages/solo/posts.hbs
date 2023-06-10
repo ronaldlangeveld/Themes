@@ -1,0 +1,27 @@
+{{!< default}} 
+
+<main class="blog-main">
+        <div class="blog-feed">
+            {{#page}}
+                <header class="blog-article-header">
+                    <h1 class="blog-article-title">{{title}}</h1>
+                </header>
+                <div class="blog-article-content">
+                    {{content}}
+                </div>
+                <hr/>
+            {{/page}}
+            {{#foreach posts}}
+            <article class="blog-post">
+                <div class="blog-post-date">
+                    <span class="blog-post-year">{{date format="YYYY"}}</span>
+                    <span class="blog-post-month">{{date format="MMMM"}}</span>
+                    <span class="blog-post-day">{{date format="D"}}</span>
+                </div>
+                <a class="blog-post-link" href="{{url}}">
+                    <h2 class="blog-post-title">{{title}}</h2>
+                </a>
+            </article>
+            {{/foreach}}
+        </div>
+    </main>
