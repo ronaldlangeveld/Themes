@@ -1,0 +1,31 @@
+{{!< default}}
+
+<main class="site-main">
+    <div class="container">
+        <div class="custom-post-feed custom-gh-feed custom-gh-canvas">
+            {{#foreach posts}}
+            <article class="custom-feed custom-visibility custom-post-class">
+
+                <div class="custom-feed-calendar">
+                    <div class="custom-feed-calendar-date">
+                        <span class="custom-feed-calendar-day">{{date published_at format="D"}}</span>
+                        <span class="custom-feed-calendar-month">{{date published_at format="MMM"}}</span>
+                        <span class="custom-feed-calendar-year">{{date published_at format="YYYY"}}</span>
+                    </div>
+                </div>
+
+                <a class="custom-feed-title" href="{{url}}">
+                    <h2>{{title}}</h2>
+                </a>
+
+                <div class="custom-feed-right">
+                    <div class="custom-feed-length">
+                        {{reading_time}}
+                    </div>
+                </div>
+
+            </article>
+            {{/foreach}}
+        </div>
+    </div>
+</main>
